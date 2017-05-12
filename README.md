@@ -17,7 +17,7 @@
 
     - ` npm i babel-loader babel-core --save `安装babel用于编译
 
-    - ` npm i babel-preset-es2015 babel-preset-react babel-preset-react-hrme --save-dev ` 安装编译方案
+    - ` npm i babel-preset-es2015 babel-preset-react babel-preset-react-hmre --save-dev ` 安装编译方案
 
     - ` npm i less --save ` 安装less（也可是其他样式预处理语言，与之后的loader对应即可）
 
