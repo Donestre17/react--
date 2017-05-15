@@ -17,7 +17,7 @@
 
     - ` npm i babel-loader babel-core --save `安装babel用于编译
 
-    - ` npm i babel-preset-es2015 babel-preset-react babel-preset-react-hrme --save-dev ` 安装编译方案
+    - ` npm i babel-preset-es2015 babel-preset-react babel-preset-react-hmre --save-dev ` 安装编译方案
 
     - ` npm i less --save ` 安装less（也可是其他样式预处理语言，与之后的loader对应即可）
 
@@ -49,6 +49,14 @@
                 }
             }
         ```
-4. 创建入口文件
+4. 在 package.json 文件中加上
+    ```
+        "scripts": {
+            "start": "hjs-dev-server",
+            "build": "webpack",
+            "deploy": "npm run build && surge -p public -d somedomain.com"
+            }
+    ```
+5. 创建入口文件
 
-    在src目录下创建app.js，然后命令行输入 ` webpack-dev-server `，服务器开启完毕后打开浏览器，输入localhost:port，即可开始开发工作了
+    在src目录下创建app.js，然后命令行输入 ` npm run start `，服务器开启完毕后打开浏览器，输入localhost:port，即可开始开发工作了
